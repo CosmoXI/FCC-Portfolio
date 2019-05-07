@@ -1,0 +1,21 @@
+/* Project Style */
+
+#navbar {
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+}
+
+@media (min-width: 650px) {
+    #navbar {
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 20%
+    }
+    section {
+        margin-left: 20%;
+    }
+}
