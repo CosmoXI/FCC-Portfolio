@@ -4,17 +4,52 @@
     display: none;
 }
 
-section {
+#welcome-section {
     min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    word-wrap: break-word;
+}
+    .name {
+        float: left;
+        padding-left: 2%;
+    }
+    .contact-mobile {
+        float: right;
+        padding-right: 2%;
+    }
+    .welcome-title {
+        padding: 40% 5% 5% 5%;
+        font-size: 8.7vw;
+        line-height: 14vw;
+    }
+
+/* Formating text */
+.text_tab {
+    margin-left: 40%;
 }
 
 @media (min-width: 650px) {
+
+    .contact-mobile {
+        display: none;
+    }
+    
     #navbar {
         display: block;
         position: fixed;
         top: 0;
         width: 20%
     }
+    
+    .name {
+        padding-top: 20%;
+    }
+    .welcome-title {
+        padding: 0 2% 5% 30%;
+        font-size: 7vw;
+        line-height: 11vw;
+    }
+
     section {
         margin-left: 20%;
     }
