@@ -1,13 +1,10 @@
-/* Project Style */
-
+/* Position */
 #navbar {
     display: none;
 }
 
 #welcome-section {
     min-height: 100vh;
-    font-family: 'Raleway', sans-serif;
-    word-wrap: break-word;
 }
     .name {
         float: left;
@@ -19,15 +16,55 @@
     }
     .welcome-title {
         padding: 40% 5% 5% 5%;
-        font-size: 8.7vw;
-        line-height: 14vw;
     }
 
+#projects {
+    margin-bottom: 25%;
+}
+    .section-title {
+        margin: 3% 0;
+    }
+    .project-tile {
+        margin-top: 8%;
+        padding: 4%;
+    }
+    .project-tile img {
+        width: 100%;
+    }
+        .project-tile_container {
+            display: flex;
+        }
+            .project-tile_left {
+                width: 60%
+            }
+            .project-tile_right {
+                width: 40%
+            }
+
 /* Formating text */
+.welcome-title,
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    word-wrap: break-word;
+}
+.welcome-title {
+    font-size: 8.7vw;
+    line-height: 14vw;
+}
+.section-title {
+    font-size: 17vw;
+    line-height: 13vw;
+}
 .text_tab {
     margin-left: 40%;
 }
 
+/* Styles */
+.project-tile {
+    border-top: 3px black solid;
+}
+
+/* Desktop */
 @media (min-width: 650px) {
 
     .contact-mobile {
