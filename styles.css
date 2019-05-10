@@ -31,29 +31,61 @@
     .project-tile img {
         width: 100%;
     }
-        .project-tile_container {
+        .project-tile_container,
+        .contact-container {
             display: flex;
         }
             .project-tile_left {
                 width: 60%
             }
             .project-tile_right {
-                width: 40%
+                padding: 2%;
+                width: 40%;
+                border: 1px solid;
             }
 
+.email {
+    margin: 4% 3%;
+}
+.social-title {
+    margin-bottom: 1%;
+}
+.social {
+    width: 30%;
+    padding-right: 5%;
+}
+.credits {
+    width: 70%;
+}
+
 /* Formating text */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
 .welcome-title,
-.section-title {
+.section-title,
+.social-title {
     font-family: 'Raleway', sans-serif;
     word-wrap: break-word;
+    text-transform: uppercase;
 }
 .welcome-title {
-    font-size: 8.7vw;
+    font-size: 7.6vw;
     line-height: 14vw;
 }
 .section-title {
-    font-size: 17vw;
-    line-height: 13vw;
+    font-size: 15vw;
+    line-height: 11vw;
+}
+.email {
+    text-align: right;
+    font-size: 7vw;
+}
+.social-title {
+    margin-top: 0;
+    font-size: 5vw;
+    text-transform: none;
 }
 .text_tab {
     margin-left: 40%;
@@ -64,9 +96,27 @@
     border-top: 3px black solid;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
 /* Desktop */
 @media (min-width: 650px) {
-
+    /* Position */
     .contact-mobile {
         display: none;
     }
@@ -74,6 +124,7 @@
     #navbar {
         display: block;
         position: fixed;
+        margin: 2%;
         top: 0;
         width: 20%
     }
@@ -83,11 +134,26 @@
     }
     .welcome-title {
         padding: 0 2% 5% 30%;
-        font-size: 7vw;
+        font-size: 5.8vw;
         line-height: 11vw;
+    }
+    .project-tile {
+        margin-top: 0;
     }
 
     section {
         margin-left: 20%;
+    }
+
+    #contact {
+        margin-bottom: 10%;
+    }
+    /* Formating text */
+    .section-title {
+        font-size: 10vw;
+        line-height: 8vw;
+    }
+    .email {
+        font-size: 6.3vw;
     }
 }
