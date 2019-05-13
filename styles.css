@@ -92,6 +92,13 @@ body {
 }
 
 /* Styles */
+.welcome-title,
+.section-title,
+.social-title {
+    background: linear-gradient(rgb(157, 166, 93), rgb(32, 36, 38));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .project-tile {
     border-top: 3px black solid;
 }
