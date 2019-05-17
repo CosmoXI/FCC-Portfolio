@@ -124,6 +124,10 @@ a:hover {
     text-decoration: underline;
 }
 
+img {
+    filter: drop-shadow(8px 8px 10px #0000001a);
+}
+
 /* Desktop */
 @media (min-width: 650px) {
     /* Position */
